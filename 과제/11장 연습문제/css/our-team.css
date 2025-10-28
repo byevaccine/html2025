@@ -1,0 +1,53 @@
+.social {
+    display: flex;
+    width: 50%; /* 크기 값 조정 */
+    margin: 0.5em 0 2em 0;
+    justify-content: space-between; /* 중앙 배치 */
+}
+
+/* min-width = 최소 <=가로=>값 조정 */
+@media screen and (min-width: 1024px) {
+    .row {
+        text-align: center; /* 텍스트 위치 중앙 표기 */
+        display: flex;
+        flex-wrap: wrap;
+        padding: 2em 1em;
+    }
+    .column {
+        padding: 0 1em;
+        max-width: 33.33%; /* 최대 가로값 */
+        flex: 0 0 33.33%;
+    }
+    #container {
+        padding: 1em; /* 간격 재설정 */
+    }
+    .card {
+        padding: 5em 1em;
+    }
+}
+.card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1); /* 이미지 박스 내 그림자 형성 (Rgba) */
+    background-color: fff;
+    color: #222;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    border-radius: 0.6em;
+    flex-direction: column;
+    padding: 3.5em 1em;
+}
+.card p {
+    letter-spacing: 2px;
+    font-weight: 300; /* 폰트 길이값 조정 (card 값 내 p(내용)) 값 */
+    margin: 0.5em 0 2em 0;
+    text-transform: uppercase;
+}
+h1 {
+    text-align: center;
+}
+.img-container {
+    
+}
+
+
+/* [.] 표기 = class 대응 /// [#]표기 = Id 대응 */

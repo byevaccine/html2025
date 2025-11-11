@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userNumber1 = parseInt(prompt('첫번째 숫자를 입력하시오'));
+        let userNumber2 = parseInt(prompt('첫번째 숫자를 입력하시오'));
+        let op = prompt('연산자를 입력하시오');
+        let reslut;
+        switch( op ) {
+            case '+':
+                reslut = userNumber1 + userNumber2;
+                break;
+            case '-':
+                reslut = userNumber1 - userNumber2;
+                break;
+            case '*':
+                reslut = userNumber1 * userNumber2;
+                break;
+            default :
+                reslut=0;
+        }
+        console.log(`${userNumber1} ${op} ${userNumber2} = ${reslut}`);
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가위바위보 1플레이어</title>
+</head>
+<body>
+    <script>
+        let rsp = String(prompt("본인이 내고 싶은 가위바위보는?"));
+        const com = [ '가위', '바위', '보' ]; //Chatgpt 참조구간
+        let pick = com[Math.floor(Math.random()*com.length)] //com 함수 중 랜덤 선택
+        console.log(pick); //실행할 때마다 랜덤
+
+        document.write(`플레이어는 ${rsp}, 상대는 ${pick}`)
+    </script>
+</body>
+</html>

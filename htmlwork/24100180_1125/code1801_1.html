@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = ['one', 'two', 'three', 'four'];
+        let number2 = new Array();
+        
+        number2[0]='five';
+        let num3 = number2.concat(numbers);
+        
+        document.writeln('<ul>');
+            for (let i=0; i<num3.length; i++)
+            document.writeln(`<li> ${num3[i]}</li>`);
+        document.writeln('</ul>');
+
+        // join....배열 안의 요소를 합치기....
+        let num21 = [1,2,3];
+        let str21 = num21.join();
+        let str22 = numbers.join('\t');
+        document.writeln('<p>' + str22);
+        document.writeln('<p>' + numbers);
+        
+        // push, unshift() 배열에 추가...
+        let num31 = numbers.push('six', 'seven');
+        document.writeln('<p> push : ' + numbers);
+        let num32 = numbers.unshift('zero', '2zero');
+        document.writeln('<p>unshift : ' + numbers);
+        num31 = numbers.pop();
+        document.writeln('<p> pop : ' + num31 + '...' +numbers);
+        num31 = numbers.shift();
+        document.writeln('<p> shift : ' + num31 + '...' +numbers);
+
+        let numsplice1 = numbers.splice(2);
+        document.writeln('<p>splice() : ' + numsplice1);
+        document.writeln('<p>numbers = : ' + numbers);
+
+        let numbers5 = ['one', 'two', 'three', 'four'];
+        let numsplice2 = numbers5.splice(1,2);
+        document.writeln('<p>splice() : ' + numsplice2);
+        document.writeln('<p>numbers5 = : ' + numbers5);
+
+        let numbers6 = ['one', 'two', 'three', 'four'];
+        let numsplice6 = numbers6.splice(numbers6.length, 0, 'five');
+        document.writeln('<p>splice() : ' + numsplice6);
+        document.writeln('<p>numbers6 = : ' + numbers6);
+
+    </script>
+</body>
+</html>
